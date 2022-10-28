@@ -1,0 +1,98 @@
+.header{
+    position: relative;
+    height: 13vh;
+    width: 98.7vw;
+    background-color: #06283D;
+}
+
+.headerIndex{
+    position: relative;
+    height: 100vh;
+    width: 98.7vw;
+}
+
+
+.div_header{
+    padding: 0.5rem 1rem;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    color: #DFF6FF;
+    transition: 1s;
+    z-index: 10;
+}
+
+
+.header__img{
+    width: 8vw;
+    height: 10vh;
+    }
+    
+    .header__h1{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+        width: 15vw;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .header__nav{
+        width: 75vw;;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .header__nav__a{
+        margin: 0rem 0.5rem;
+        text-decoration: none;
+        color: #DFF6FF;
+        transition: 0.5s;
+        width: 8vw;
+        
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .header__nav__a:hover{
+        background-color: #DFF6FF;
+        color: #06283D;
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+    
+    .header__pinter{
+        background-color: #06283D;
+    border-bottom: #DFF6FF 2px solid;
+    transition: 1s;
+}
+
+#tsparticles{
+    background-color: #06283D;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 00.5s;
+    z-index: 0;
+}
+
+.divsubHeader{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.divsubHeader_h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #DFF6FF;
+}
+
+.divsubHeader_h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #DFF6FF
+}

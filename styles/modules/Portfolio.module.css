@@ -1,0 +1,130 @@
+.sectionPortfolio{
+    background-color: #06283D;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem 0.5rem;
+    color: #DFF6FF;
+}
+
+.sectionPortfolio__h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sectionPortfolio__divProjects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos de ProjectCard */
+
+    .divProjectCards{
+        margin-bottom: 2rem;
+        position: relative;
+        width: 50vw;
+        height: 50vh;
+        overflow: hidden;
+        transition: width 1s;
+    }
+
+    .subdivProjectCards{
+        width: 100%;
+        height: 100%;
+        display: flex; 
+        border-radius: 5px;
+        border: 3px solid #DFF6FF;
+        position: absolute;
+        backface-visibility: hidden;
+        overflow: hidden;
+        transition: 1.5s;
+        background-color: #06283D;
+    }
+
+    .ProjectCard__pt1{
+        width: 18vw;
+        height: 100%;
+        position: relative;
+    }
+
+            .ProjectCard__pt1__img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+            }
+
+            .ProjectCard__pt1__h2{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 50px;
+                font-size: 1.5rem;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+            }
+
+    .ProjectCard__pt2{
+        width: 32vw;
+        height: 100%;
+        position: relative;
+        padding: 0.5rem 1.5rem;
+    }
+
+            .ProjectCard__pt2__h2{
+                width: 100%;
+                height: 50px;
+                font-size: 1.5rem;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .ProjectCard__pt2__p{
+                text-align: justify;
+            }
+
+            .ProjectCard__pt2__btn{
+                position: relative;
+                top: 16vh;
+                left: 9vw;
+                color: #06283D;
+                background-color: #DFF6FF;
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+
+/* .ProjectCard__pt2 :hover .subdivProjectCards{
+    width: 80vw;
+} */
+
+    .ProjectCard__pt3{
+        width: 0%;
+        display: flex;
+    }
+
+    .ProjectCard__pt3__div1{
+        width: 50vw;
+        padding: 0.5rem;
+    }
+
+    .ProjectCard__pt3__div2{
+        width: 30vw;
+        border-left: #DFF6FF solid 2px;
+        padding: 0.5rem;
+    }
+
+.flipdivProjectCards{
+    width: 80vw;
+}
+
+.flipProjectCard__pt2{
+    display: none;
+}
+
+.flipProjectCard__pt3{
+    width: 62vw;
+}

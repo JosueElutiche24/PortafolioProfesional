@@ -1,0 +1,56 @@
+.learningCard{
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    position: relative;
+
+    margin: 1rem;
+    border-radius: 5px;
+    border: 3px solid #DFF6FF;
+}
+
+.learningCard__pt1{
+    width: 15vw;
+    height: 100%;
+    position: relative;
+}
+
+        .learningCard__pt1__icon svg{
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            left: 10%;
+            top: 13%;
+        }
+
+        .learningCard__pt1__h2{ 
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            font-size: 1.5rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+.learningCard__pt2{
+    width: 25vw;
+    height: 100%;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+}
+
+        .learningCard__pt2__p{
+            text-align: justify;
+        }
+
+        .learningCard__pt2__h2{
+            width: 100%;
+            height: 50px;
+            font-size: 1.5rem;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
