@@ -61,6 +61,12 @@
         border-radius: 5px;
         transition: 0.5s;
     }
+
+    .header__nav__a_Selected{
+        background-color: #DFF6FF;
+        color: #06283D;
+        border-radius: 5px;
+    }
     
     .header__pinter{
         background-color: #06283D;

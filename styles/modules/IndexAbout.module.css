@@ -1,0 +1,49 @@
+.sector_primary{
+    background-color: #06283D;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem 5rem;
+    color: #DFF6FF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.div_principal{
+    width: 70%;
+}
+
+.div_principal h2{
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+.div_principal p{
+    
+}
+
+.nav_principal{
+    width: 30%;
+    padding: 0 5rem;
+    font-size: 1.3rem;
+}
+
+.nav_principal ul{
+    outline: #DFF6FF solid 2px;
+    width: 66%;
+    padding: 1rem 1rem 1rem;
+}
+
+.nav_principal_incisos{
+    margin-left: 2rem;
+    list-style-type: square;
+}
+
+
+.sector_secundary{
+        background-color: #06283D;
+        padding: 3rem;
+        margin: 1rem 0;
+        color: #DFF6FF;
+}

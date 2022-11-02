@@ -12,37 +12,52 @@ export default function NavMenu({title}) {
   })
 
   if(title == "principal-page")return (
-    <nav className={styles.headerIndex}>
+    <header className={styles.headerIndex}>
     <Particulario/>
     <div className={styles.div_header}>
         <img src="/LogoLaits1.png" className={styles.header__img}/>
         <h1 className={styles.header__h1}>Bienvenidos</h1>
         <nav className={styles.header__nav}>
-            <Link href="/"><a className={styles.header__nav__a}>Home</a></Link>
-            <Link href="/#AboutArea"><a className={styles.header__nav__a}>About</a></Link>
-            <Link href="/#PortfolioArea"><a className={styles.header__nav__a}>Portfolio</a></Link>
-            <Link href="/contact"><a className={styles.header__nav__a} >Contact</a></Link>
+            {/* <Link href="/"><a className={styles.header__nav__a}>Inicio</a></Link> */}
+            <Link href="/"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected}>Portafolio</a></Link>
+            <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>
+            <Link href="/more_about_me"><a className={styles.header__nav__a}>Mas sobre mi</a></Link>
         </nav>
     </div>
     <div className={styles.divsubHeader}>
       <h1 className={styles.divsubHeader_h1}>Josué Guzman</h1>
       <h2 className={styles.divsubHeader_h2}>Desarrollador Frontend</h2>
     </div>
-</nav>
+</header>
   )
-  if(title !== "principal-page")return (
-    <nav className={styles.header}>
+  if(title == "contact")return (
+    <header className={styles.header}>
     <Particulario/>
     <div className={styles.div_header}>
         <img src="/LogoLaits1.png" className={styles.header__img}/>
         <h1 className={styles.header__h1}>Bienvenidos</h1>
         <nav className={styles.header__nav}>
-            <Link href="/"><a className={styles.header__nav__a}>Home</a></Link>
-            <Link href="/#AboutArea"><a className={styles.header__nav__a}>About</a></Link>
-            <Link href="/#PortfolioArea"><a className={styles.header__nav__a}>Portfolio</a></Link>
-            <Link href="/contact"><a className={styles.header__nav__a} >Contact</a></Link>
+            {/* <Link href="/"><a className={styles.header__nav__a}>Inicio</a></Link> */}
+            <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
+            <Link href="/contact"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected} >Contactame</a></Link>
+            <Link href="/more_about_me"><a className={styles.header__nav__a}>Mas sobre mi</a></Link>
         </nav>
     </div>
-</nav>
+</header>
+  )
+  if(title == "more_about_me")return (
+    <header className={styles.header}>
+    <Particulario/>
+    <div className={styles.div_header}>
+        <img src="/LogoLaits1.png" className={styles.header__img}/>
+        <h1 className={styles.header__h1}>Bienvenidos</h1>
+        <nav className={styles.header__nav}>
+            {/* <Link href="/"><a className={styles.header__nav__a}>Inicio</a></Link> */}
+            <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
+            <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>
+            <Link href="/more_about_me"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected}>Mas sobre mi</a></Link>
+        </nav>
+    </div>
+</header>
   )
 }
