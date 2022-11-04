@@ -14,7 +14,6 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-tsparticles": "^2.3.3",
-    "swiper": "^8.4.3",
     "tsparticles": "^2.3.4"
   },
   "devDependencies": {

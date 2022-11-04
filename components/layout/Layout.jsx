@@ -15,7 +15,7 @@ export default function Layout({children, title = "no-hay-titulo"}) {
         <NavMenu title= {title}/>
 
         <div>{children}</div>
-        <Footer/>
+        <Footer title={title}/>
   </div>
   )
 }
