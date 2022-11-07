@@ -1,0 +1,141 @@
+.principalDiv{
+    background-color: #06283D;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem 0.5rem;
+    color: #DFF6FF;
+}
+
+.principalTitle{
+    font-family: cursive;
+    font-size: 2rem ;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.Form{
+    width: 65vw;
+    margin: 0 auto;
+    padding: 1rem;
+    outline: #DFF6FF 3px solid;
+    border-radius: 10px;
+}
+
+.inputContainer{
+    outline: #DFF6FF solid 1px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+        .inputContainer label{
+            display: flex;
+            align-items: center;
+            padding:  0 1rem;
+        }
+        .iName, .iEmail{
+            outline: none;
+            background-color: rgba(223, 246, 255, 0.8);
+            color: #06283D;
+            width: 35%;
+            height: 5vh;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .iMessage{
+            outline: none;
+            background-color: rgba(223, 246, 255, 0.8);
+            color: #06283D;
+            width: 55%;
+            height: 20vh;
+            transition: 0.3s;
+        }
+        .iName:focus, .iEmail:focus{
+            color: #DFF6FF;
+            background-color: #06283D;
+            outline: #DFF6FF 1px solid;
+        }
+        .iMessage:focus{
+            color: #DFF6FF;
+            background-color: #06283D;
+            outline: #DFF6FF 1px solid;
+        }
+
+.btnSend{
+    margin: 1rem auto;
+    color: #DFF6FF;
+    transition: 0.5s;
+    width: 12vw;
+    height: 5vh;
+    outline: #DFF6FF 1px solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+        .btnSendDesconected{
+            display: none;
+        }
+.btnSend:hover{
+    background-color: #DFF6FF;
+    color: #06283D;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.alertDiv{
+    margin: 0.5rem;
+}
+        .alert{
+            margin: 0.5rem;
+            display: flex;
+            justify-content: center;
+}
+        .alert_p{
+            font-size: 1.3rem;
+            text-decoration: underline red;
+        }
+
+.errorEncontrado{
+    outline: solid red 3px;
+    background-color: #ffdfdf;
+}
+
+/* Estilos poara el Modal de respuesta */
+
+.Modal{
+    position: fixed;
+    top: 30vh;
+    left: 30vw;
+    width: 40vw;
+    height: 40vh;
+
+    background-color: #06283D;
+    border-radius: 10px;
+    border: #DFF6FF solid 4px;
+    padding: 3rem;
+    color: #DFF6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.Modal_P{
+    font-size: 1.3rem;
+}
+.Modal_btn{
+    margin: 1rem auto;
+    color: #DFF6FF;
+    transition: 0.5s;
+    width: 12vw;
+    height: 5vh;
+    outline: #DFF6FF 1px solid;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.Modal_btn:hover{
+    background-color: #DFF6FF;
+    color: #06283D;
+    border-radius: 5px;
+    transition: 0.5s;
+}

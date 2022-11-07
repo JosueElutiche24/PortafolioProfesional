@@ -1,6 +1,3 @@
-import 'swiper/css';
-import "swiper/css/mousewheel"
-import "swiper/css/navigation"
 import {DiJsBadge , DiNodejsSmall, DiCss3, DiReact, DiGit} from "react-icons/di"
 import {SiElectron, SiTailwindcss}from "react-icons/si"
 

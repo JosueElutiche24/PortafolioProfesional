@@ -1,5 +1,6 @@
 import Knowledge from "./Knowledge";
 import styles from "../../styles/modules/About.module.css"
+import Link from "next/link";
 
 function About(){
     return(
@@ -12,6 +13,7 @@ function About(){
                 <p className={styles.sectionAbout__div1__subDiv1P}>Luego de terminar mis estudios diversificados comencé con mi aventura de aprendizaje y hoy te voy a contar sobre todo lo que e aprendido.</p>
                 <div className={styles.sectionAbout__div1__subDiv1ContainerBtn}>
                     <a href="https://drive.google.com/uc?export=download&id=1TemQ0cvHIE-lM5CEVKmo811rCG5k_lua" className={styles.sectionAbout__div1__subDiv1Btn}>Descarga mi CV</a>
+                    <Link href="/contact"><a className={styles.sectionAbout__div1__subDiv1Btn}>Contactame</a></Link>
                 </div>
             </div>
             <div className={styles.sectionAbout__div1__subDiv2}>
