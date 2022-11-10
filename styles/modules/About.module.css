@@ -91,31 +91,3 @@
             font-size: 2rem;
             text-align: center;
         }
-
-.divSkills{   
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10vw;
-    margin-bottom: 2rem;
-}
-
-.divLearning{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    width: 100%;
-    justify-content: center;
-}
-
-.divHobbies{
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: center;
-    width: 80%;
-    margin-left: 10vw;
-    margin-bottom: 2rem;
-}

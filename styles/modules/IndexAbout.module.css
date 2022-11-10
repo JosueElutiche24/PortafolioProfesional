@@ -1,49 +1,135 @@
+/*  Estilos para la primera seccion */
+/* Paleta de colores
+DFF6FF blanco azulado
+93d7f1 Celeste
+0e5581 Azul medio
+083b5a Azul casi oscuro
+06283D Azul oscuro */
+
 .sector_primary{
-    background-color: #06283D;
-    border-radius: 10px;
-    padding: 3rem;
-    margin: 1rem 5rem;
-    color: #DFF6FF;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    background-color: #06283D;
+    color: #DFF6FF;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem auto;
+    width: 80%;
 }
 
 .div_principal{
-    width: 70%;
+    width: 100%;
 }
 
-.div_principal h2{
+.div_principal__H2{
     font-size: 2rem;
+    font-family: cursive;
     line-height: 2rem;
     margin-bottom: 2rem;
+    text-align: center;
 }
-.div_principal p{
-    
-}
-
-.nav_principal{
-    width: 30%;
-    padding: 0 5rem;
+.div_principal__P{
+    width: 80%;
     font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin: 0.5rem auto;
 }
 
-.nav_principal ul{
-    outline: #DFF6FF solid 2px;
-    width: 66%;
-    padding: 1rem 1rem 1rem;
-}
-
-.nav_principal_incisos{
-    margin-left: 2rem;
-    list-style-type: square;
-}
-
-
+/*  Estilos para la segunda seccion */
 .sector_secundary{
         background-color: #06283D;
         padding: 3rem;
         margin: 1rem 0;
         color: #DFF6FF;
+}
+
+.TAB{
+    width: 100%;
+    min-height: 60vh;
+    border-radius: 10px;
+    outline: #DFF6FF 2px solid;
+}
+
+     .tabNavigator{
+        width: 100%;
+        height: 16vh;
+        outline: #DFF6FF 2px solid;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+        display: flex;
+    }
+
+            .tabNavigator__btn{
+                border-bottom: #0e5581 solid 5px;  
+                background-color: #083b5a;
+                width: 25%;
+                outline: #DFF6FF 2px solid;
+                font-size: 1.3rem;
+                font-family: cursive;
+                transition: 0.3s;
+            }
+            .tabNavigator__btnOFF{
+                border-bottom: #06283D solid 5px;  
+                background-color: #06283D;
+            }
+            .tabNavigator__btn:hover{
+                -webkit-box-shadow: inset 0px 0px 48px -25px rgba(223,246,255,1);
+                -moz-box-shadow: inset 0px 0px 48px -25px rgba(223,246,255,1);
+                box-shadow: inset 0px 0px 48px -25px rgba(223,246,255,1);
+            }
+            .tabNavigator__right{
+                border-top-right-radius: 10px;
+            }
+            .tabNavigator__left{
+                border-top-left-radius: 10px;
+            }
+
+    .tabContainer{
+        width: 99%;
+        min-height: 44vh;
+        margin: auto;
+    }
+
+            .SectionTab{
+                width: 100%;
+                height: 100%;
+            }
+            .SectionTabOFF{
+                display: none;
+            }
+
+.divDevProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.divSkills{   
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+            
+.divLearning{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: center;
+}
+            
+.divHobbies{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 2rem;
+    position: relative;
 }
