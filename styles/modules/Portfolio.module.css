@@ -127,6 +127,7 @@
                     .textConocimientoEmpleado{
                         margin: 0 1.5rem;
                         padding-bottom: 0.5rem;
+                        text-align: justify;
                     }
             .ProjectCard__pt3__div1__subdiv2{
                 width: 100%;
@@ -171,9 +172,28 @@
             text-align: center;
             padding-bottom: 0.5rem;
         }
-        .textTecnologías{
-            margin: 0 1.5rem;
+        .Tecnologias__div{
+            margin: 1rem auto;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
         }
+        .Tecnologias__item{
+            background-color: #DFF6FF;
+            color: #06283D;
+            border-radius: 5px ;
+            padding: 0.1rem 0.5rem;
+            margin: 0.1rem;
+            font-family: monospace;
+            font-size: 1.11rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* .ProjectCard__pt3__div2__subDiv{
+
+        } */
 .flipdivProjectCards{
     width: 80vw;
 }

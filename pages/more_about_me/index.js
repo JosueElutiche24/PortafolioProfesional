@@ -7,6 +7,8 @@ import Hobbies from "../../components/about/Hobbies";
 import ProjectCard from "../../components/portfolio/Projects"
 import { useState } from 'react';
 
+import { CSharpIcon, InglesIcon, NetIcon, TypescriptIcon } from '../../components/Icons.Svg';
+
 export default function About_me() {
   const [HandleTab, setHandleTab] = useState(1)
 
@@ -24,7 +26,7 @@ export default function About_me() {
               <div className={styles.div_principal}>
                 <h2 className={styles.div_principal__H2}>Sobre mi :</h2>
                 <p className={styles.div_principal__P}>Me gusta crear y me gusta aprender. Gracias a estas dos de mis cualidades fue que decidí aventurarme en el mundo del desarrollo de software... y me encantó !!.</p>
-                <p className={styles.div_principal__P}>Comencé aprendiendo con el lenguaje JavaScript debido a que se puede crear contenido para diversas áreas de la programación. Actualmente estoy enfocandome en el desarrollo web , pero también me encantaría obtener conocimientos sobre el desarollo de aplicaciones de servidor y aplicaciones nativas.</p>
+                <p className={styles.div_principal__P}>Comencé aprendiendo con el lenguaje JavaScript debido a que se puede crear contenido para diversas áreas de la programación. Actualmente estoy enfocandome en el desarrollo web , pero también me encantaría obtener conocimientos sobre el desarollo de aplicaciones de servidor y aplicaciones moviles.</p>
                 <p className={styles.div_principal__P}>A continuación encontrarás mas detalles sobre: lo que me gusta hacer, nuevos aprendizages y proyectos que estoy desarrolando.</p>
               </div>
             </section>
@@ -39,28 +41,25 @@ export default function About_me() {
                   </nav>
                   <div className={styles.tabContainer}>
                       <div className={HandleTab == 1? styles.SectionTab+" "+styles.divLearning : styles.SectionTabOFF}>
-                          <Learning Title="PhosgreSQL" Image="FaAmazon" Text="Texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba]"/>
-                          <Learning Title="Titulo de prueba" Image="FaApple" Text="Texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba]"/>
-                          <Learning Title="Titulo de prueba" Image="FaCss3Alt" Text="Texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba]"/>
-                          <Learning Title="Titulo de prueba" Image="FaBluetoothB" Text="Texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba texto de prueba]"/>
+                          <Learning Title=".NET" Text="Una tecnología muy versatil y muy demandada actualmente, por lo que me interesa aprender sobre ello."><NetIcon/></Learning>
+                          <Learning Title="C#" Text="Debido a que este lenguaje es bastante utilizado en el desarrollo de videojuegos y .Net funciona con este lenguaje, me dan motivos más que suficientes para interesarme en aprenderlo."><CSharpIcon/></Learning>
+                          <Learning Title="Typescript" Text="Typescript es un gran complemento a Javascript y ciertamente no es muy complicado de aprender. Proximamente implementaré typescript en uno de mis proyectos."><TypescriptIcon/></Learning>
+                          <Learning Title="Ingles" Text="Para encontrar mejores oportunidades de empleo, como programador es esencial dominar el ingles. Esta es una de las herramientas principales que debo aprender"><InglesIcon/></Learning>
                       </div>
                       <div className={HandleTab == 2? styles.SectionTab+" "+styles.divDevProjects : styles.SectionTabOFF}>
-                          <ProjectCard link ="https://www.google.com/" Title="No disponnible" Image="/abstracview.jpg" Text="Los proyectos para esta sección aún estan en estado de desarrollo" Text2="text2" Text3="Text3"/>
-                          <ProjectCard link ="https://www.google.com/" Title="No disponnible" Image="/abstracview.jpg" Text="Los proyectos para esta sección aún estan en estado de desarrollo" Text2="text2" Text3="Text3"/>
+                          <ProjectCard linkView ="ModoDes" linkGithub="https://www.google.com/" Title="No disponnible" Image="/abstracview.jpg" Description="Los proyectos para esta sección aún estan en estado de desarrollo" ConocimientosEmpleados="No disponible" Tecnologias={["null", "null", "null", "null"]}/>
+                          <ProjectCard linkView ="ModoDes" linkGithub="https://www.google.com/" Title="CV Creator" Image="/abstracview.jpg" Description="En este sitio web podrás crear tu curriculum de manera fácil y rápida utilizando nuestras plantillas con diseños increíbles." ConocimientosEmpleados="En el desarrollo de este proyecto se esta utilizando : Teilwin para el diseño de la interfaz. Manejo de varios formularios con React Hook Form. reacion y visualizacion de PDFs con create ReactPDF" Tecnologias={["react", "nextJS", "Teilwind", "React-Hoock-Form"]}/>
                       </div>
                       <div className={HandleTab == 3? styles.SectionTab+" "+styles.divHobbies: styles.SectionTabOFF}>
-                          <Hobbies Image="/abstracview.jpg" Num="2" Title= "Titulo de ejemplo" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Hobbies Image="/abstracview.jpg" Num="2" Title= "Titulo de ejemplo" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Hobbies Image="/abstracview.jpg" Num="2" Title= "Titulo de ejemplo" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Hobbies Image="/abstracview.jpg" Num="2" Title= "Titulo de ejemplo" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Hobbies Image="/abstracview.jpg" Title= "Dibujar" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Hobbies Image="/abstracview.jpg" Title= "Musica" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Hobbies Image="/abstracview.jpg" Title= "Ejercitarme" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
                       </div>
                       <div className={HandleTab == 4? styles.SectionTab+" "+styles.divSkills : styles.SectionTabOFF}>
-                          <Skills Image="/abstracview.jpg" Num="1" Title= "Buena capacidad Lógica" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Skills Image="/abstracview.jpg" Num="2" Title= "Hábil aprendiz" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Skills Image="/abstracview.jpg" Num="3" Title= "Flexibilidad y adaptabilidad" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Skills Image="/abstracview.jpg" Num="1" Title= "Paciente" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Skills Image="/abstracview.jpg" Num="2" Title= "Empatía y tolerancia" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Skills Image="/abstracview.jpg" Num="2" Title= "Titulo de ejemplo" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Skills Image="/abstracview.jpg" Title= "Buena capacidad Lógica" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Skills Image="/abstracview.jpg" Title= "Hábil aprendiz" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Skills Image="/abstracview.jpg" Title= "Flexibilidad y adaptabilidad" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Skills Image="/abstracview.jpg" Title= "Empatía y tolerancia" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
                       </div>
                   </div>
                 </div>

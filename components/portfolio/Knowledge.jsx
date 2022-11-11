@@ -1,5 +1,6 @@
-import {DiJsBadge , DiNodejsSmall, DiCss3, DiReact, DiGit} from "react-icons/di"
-import {SiElectron, SiTailwindcss}from "react-icons/si"
+import {DiNodejsSmall, DiReact, DiGithubBadge} from "react-icons/di"
+import {SiElectron, SiTailwindcss, SiExpress, SiBootstrap, SiMysql}from "react-icons/si"
+import {NextIcon} from "../Icons.Svg.jsx";
 
 import styles from "../../styles/modules/Knowledge.module.css"
 
@@ -7,23 +8,7 @@ function Knowledge(){
 
     return(
         <section className={styles.sectionContainer}>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <DiJsBadge className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>JavaScript</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <DiCss3 className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>Css</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
+           <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
                     <DiReact className={styles.Front__icon}/>
                 </div>
@@ -33,10 +18,10 @@ function Knowledge(){
             </div>
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <SiElectron className={styles.Front__icon}/>
+                    <SiTailwindcss className={styles.Front__icon}/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>Electron</p>
+                    <p>Tailwind</p>
                 </div>
             </div>
             <div className={styles.Card}>
@@ -49,7 +34,23 @@ function Knowledge(){
             </div>
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <DiGit className={styles.Front__icon}/>
+                    <SiMysql className={styles.Front__icon}/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>MySql</p>
+                </div>
+            </div>
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <SiElectron className={styles.Front__icon}/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Electron</p>
+                </div>
+            </div>
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <DiGithubBadge className={styles.Front__icon}/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
                     <p>Git y Github</p>
@@ -57,10 +58,26 @@ function Knowledge(){
             </div>
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <SiTailwindcss className={styles.Front__icon}/>
+                    <SiBootstrap className={styles.Front__icon}/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>Talewin</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <SiExpress className={styles.Front__icon}/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Express</p>
+                </div>
+            </div>
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <NextIcon className={styles.Front__icon}/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>NextJS</p>
                 </div>
             </div>
         </section>

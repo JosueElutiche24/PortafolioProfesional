@@ -7,11 +7,11 @@ function Footer({title}) {
     if(title == "principal-page")return(
         <div className={styles.Footer}>
             <div className={styles.Footer__Pt1}>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a>
+                <a className={styles.Footer__Pt1__items} href='https://github.com/JosueElutiche24'><AiFillGithub/></a>
                 <p>|</p>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillLinkedin/></a>
-                <p>|</p>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a>
+                <a className={styles.Footer__Pt1__items} href='https://www.linkedin.com/in/josue-guzman-754063256'><AiFillLinkedin/></a>
+                {/* <p>|</p>
+                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a> */}
             </div>
             <div className={styles.Footer__Pt2}>
                 <Link href="/contact"><a className={styles.a}>contactame</a></Link>
@@ -23,7 +23,9 @@ function Footer({title}) {
     if(title == "contact")return(
         <div className={styles.Footer}>
             <div className={styles.Footer__Pt1}>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a>
+                <a className={styles.Footer__Pt1__items} href='https://github.com/JosueElutiche24'><AiFillGithub/></a>
+                <p>|</p>
+                <a className={styles.Footer__Pt1__items} href='https://www.linkedin.com/in/josue-guzman-754063256'><AiFillLinkedin/></a>
             </div>
             <div className={styles.Footer__Pt2}>
                 <p className={styles.p3}>Gracias por ver</p>
@@ -33,11 +35,11 @@ function Footer({title}) {
     if(title == "more_about_me")return(
         <div className={styles.Footer}>
             <div className={styles.Footer__Pt1}>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a>
+                <a className={styles.Footer__Pt1__items} href='https://github.com/JosueElutiche24'><AiFillGithub/></a>
                 <p>|</p>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillLinkedin/></a>
-                <p>|</p>
-                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a>
+                <a className={styles.Footer__Pt1__items} href='https://www.linkedin.com/in/josue-guzman-754063256'><AiFillLinkedin/></a>
+                {/* <p>|</p>
+                <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a> */}
             </div>
             <div className={styles.Footer__Pt2}>
                 <Link href="/contact"><a className={styles.a}>contactame</a></Link>

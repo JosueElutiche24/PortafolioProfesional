@@ -1,6 +1,6 @@
 import styles from "../../styles/modules/Hobbies.module.css"
 
-function Hobbies({Title, Text, Image, Num}) {
+function Hobbies({Title, Text, Image}) {
   return (
     <div className={styles.HobbieCard}>
     <div className={styles.H_faces +" "+ styles.HobbieCard__front}>
