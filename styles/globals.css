@@ -1,1 +1,5 @@
 :root{ --swiper-theme-color : #DFF6FF !important}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
