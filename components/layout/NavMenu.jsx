@@ -20,11 +20,13 @@ export default function NavMenu({title}) {
     <header className={styles.headerIndex}>
     <Particulario/>
     <div className={styles.div_header}>
-        <img src="/LogoLaits1.png" className={styles.header__img}/>
+        <div className={styles.header__logoTitle}>
+        <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
         <h1 className={styles.header__h1}>Bienvenidos</h1>
+        </div>
         <nav className={styles.header__nav}>
             <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
-            <div className={styles.header__nav__Responsive}>
+            <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
                 <Link href="/"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected}>Portafolio</a></Link>
                 <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>
@@ -43,11 +45,13 @@ export default function NavMenu({title}) {
     <header className={styles.header}>
     <Particulario/>
     <div className={styles.div_header}>
-        <img src="/LogoLaits1.png" className={styles.header__img}/>
-        <h1 className={styles.header__h1}>Bienvenidos</h1>
+      <div className={styles.header__logoTitle}>
+          <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
+          <h1 className={styles.header__h1}>Bienvenidos</h1>
+      </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
-            <div className={styles.header__nav__Responsive}>
+            <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
                   <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
                   <Link href="/contact"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected} >Contactame</a></Link>
@@ -62,11 +66,13 @@ export default function NavMenu({title}) {
     <header className={styles.header}>
     <Particulario/>
     <div className={styles.div_header}>
-        <img src="/LogoLaits1.png" className={styles.header__img}/>
-        <h1 className={styles.header__h1}>Bienvenidos</h1>
+      <div className={styles.header__logoTitle}>
+          <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
+          <h1 className={styles.header__h1}>Bienvenidos</h1>
+      </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
-            <div className={styles.header__nav__Responsive}>
+            <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
                     <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
                     <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>

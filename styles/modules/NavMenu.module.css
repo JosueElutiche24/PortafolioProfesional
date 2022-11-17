@@ -20,44 +20,53 @@
     display: flex;
     color: #DFF6FF;
     transition: 1s;
-    justify-content: center;
     align-items: center;
     border-bottom: solid 2px transparent;
     z-index: 10;
 }
 
-
-.header__img{
-    width: 8vw;
+.header__logoTitle{
+    display: flex;
     height: 10vh;
+    width: 40vw;
+}
+
+    .header__imgContainer{
+        width: 10vh;
+        height: 10vh;
+        background-color: aqua;
     }
+        .header__img{
+            width: 100%;
+            height: 100%;
+        }
     
     .header__h1{
         font-size: 2rem;
         margin-left: 1.5rem;
         width: 15vw;
         display: flex;
-        align-items: center;
+        align-items: center;      
     }
 
+    .header__nav{
+        width: 60vw;
+        height: 10vh;
+        display: flex;
+        justify-content: flex-end;
+    }
     .header__Burguer{
         font-size: 2.5rem;
         display: none;
     }
     .header__nav__Responsive{
-        width: 75vw;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: flex-end;
     }
     .header__nav__Responsive__flexor{
-        width: 75vw;;
-        height: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .header__nav{
-        width: 75vw;
+        width: 100%;;
         height: 100%;
         display: flex;
         justify-content: flex-end;
@@ -131,6 +140,11 @@
         .header__Burguer{
             display: block;
         }
+
+        .header__h1{
+            font-size: 1.5rem;
+        }
+
         .header__nav__Responsive{
             transition: 0.3s;
             background-color: #06283D;
@@ -170,22 +184,22 @@
     
     .divsubHeader_h1{
         font-size: 2.8rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     
     .divsubHeader_h2{
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
     }
     
+    /* Dejar esto aquí abajo por temas de especificidad y cascada */
+    .menuBurguerOnOff{
+        width: 0%;
+        border: none;
+    }
+    .menuBurguerOnOff a{
+        display: none;
+    }
 }
 
 
-/* Dejar esto aquí abajo por temas de especificidad y cascada */
-.menuBurguerOnOff{
-    width: 0%;
-    border: none;
-}
-.menuBurguerOnOff a{
-    display: none;
-}
