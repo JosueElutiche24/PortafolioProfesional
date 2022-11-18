@@ -2,4 +2,24 @@
 body{
     box-sizing: border-box;
     overflow-x: hidden;
+    font-size: 1.2rem;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.tR_medium{
+    font-size:  calc(1em + 1vw);
+    line-height: 1em;
+}
+
+.tR_small{
+    font-size:  calc(0.7em + 0.7vw);
+    line-height: 1em;
+}
+.tR_large{
+    font-size:  calc(1.3em + 1.3vw);
+    line-height: 1em;
+}
+.tR_Xlarge{
+    font-size:  calc(1.5em + 1.5vw);
+    line-height: 1em;
 }

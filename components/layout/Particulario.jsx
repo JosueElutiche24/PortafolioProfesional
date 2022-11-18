@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
-import particuulario_config from "./particulario.config.json"
+import particulario_config from "./particulario.config.json"
 import stylesParticles from "../../styles/modules/NavMenu.module.css"
 
 function Particulario(){
@@ -14,7 +14,7 @@ function Particulario(){
     }, []);
 
     return (
-            <Particles id={stylesParticles.tsparticles} init={particlesInit} loaded={particlesLoaded} options={particuulario_config}/>
+            <Particles id={stylesParticles.tsparticles} init={particlesInit} loaded={particlesLoaded} options={particulario_config}/>
     );
 };
 

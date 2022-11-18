@@ -66,11 +66,50 @@
           }
         }
     },
-    "retina_detect": false,
+    "retina_detect": true,
     "background": {
         "image": "",
         "position": "20% 20%",
         "repeat": "no-repeat",
         "size": "cover"
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": false,
+          "mode": "grab"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 200,
+          "line_linked": {
+            "opacity": 0.5
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 50,
+          "duration": 10
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
     }
 }

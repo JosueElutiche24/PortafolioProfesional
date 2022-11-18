@@ -16,7 +16,7 @@
     --color-secundario       : #DFF6FF;
     
     /* Tipografía */
-    --tipo-principal   : Helvetica, Arial, sans-serif;
+    --tipo-principal   : "ubuntu", Helvetica, Arial, sans-serif;
     --tipo-secundaria  : Verdana;
   }
 
