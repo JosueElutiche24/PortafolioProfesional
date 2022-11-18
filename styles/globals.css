@@ -3,23 +3,37 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     font-size: 1.2rem;
-    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
+}
+
+.textUbuntu{
+    font-family: 'Ubuntu', sans-serif; 
 }
 
 .tR_medium{
-    font-size:  calc(1em + 1vw);
+    font-size:  calc(0.7em + 1vw);
     line-height: 1em;
 }
 
 .tR_small{
-    font-size:  calc(0.7em + 0.7vw);
+    font-size:  calc(0.5em + 0.7vw);
     line-height: 1em;
 }
 .tR_large{
-    font-size:  calc(1.3em + 1.3vw);
+    font-size:  calc(1.3em + 1.5vw);
     line-height: 1em;
 }
 .tR_Xlarge{
-    font-size:  calc(1.5em + 1.5vw);
+    font-size:  calc(1.5em + 1.8vw);
+    line-height: 1em;
+}
+
+.tR_XXlarge{
+    font-size:  calc(2em + 2vw);
+    line-height: 1em;
+}
+.tR_XXLlarge{
+    font-size:  calc(2.3em + 2.2vw);
     line-height: 1em;
 }

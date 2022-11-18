@@ -22,22 +22,22 @@ export default function NavMenu({title}) {
     <div className={styles.div_header}>
         <div className={styles.header__logoTitle}>
         <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-        <h1 className={styles.header__h1}>Bienvenidos</h1>
+        <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
         </div>
         <nav className={styles.header__nav}>
             <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
             <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
-                <Link href="/"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected}>Portafolio</a></Link>
-                <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>
-                <Link href="/more_about_me"><a className={styles.header__nav__a}>Mas sobre mi</a></Link>
+                <Link href="/"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected+" textUbuntu tR_medium"}>Portafolio</a></Link>
+                <Link href="/contact"><a className={styles.header__nav__a+" textUbuntu tR_medium"} >Contactame</a></Link>
+                <Link href="/more_about_me"><a className={styles.header__nav__a+" textUbuntu tR_medium"}>Mas sobre mi</a></Link>
                 </div>
             </div>
         </nav>
     </div>
     <div className={styles.divsubHeader}>
-      <h1 className={styles.divsubHeader_h1}>Josué Guzman</h1>
-      <h2 className={styles.divsubHeader_h2}>Desarrollador Frontend</h2>
+      <h1 className={styles.divsubHeader_h1+" textUbuntu tR_XXLlarge"}>Josué Guzman</h1>
+      <h2 className={styles.divsubHeader_h2+" textUbuntu tR_XXlarge"}>Desarrollador Frontend</h2>
     </div>
 </header>
   )
@@ -47,15 +47,15 @@ export default function NavMenu({title}) {
     <div className={styles.div_header}>
       <div className={styles.header__logoTitle}>
           <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-          <h1 className={styles.header__h1}>Bienvenidos</h1>
+          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
       </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
             <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
-                  <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
-                  <Link href="/contact"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected} >Contactame</a></Link>
-                  <Link href="/more_about_me"><a className={styles.header__nav__a}>Mas sobre mi</a></Link>
+                  <Link href="/"><a className={styles.header__nav__a+" textUbuntu tR_medium"}>Portafolio</a></Link>
+                  <Link href="/contact"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected+" textUbuntu tR_medium"} >Contactame</a></Link>
+                  <Link href="/more_about_me"><a className={styles.header__nav__a+" textUbuntu tR_medium"}>Mas sobre mi</a></Link>
                 </div>
             </div>
         </nav>
@@ -68,15 +68,15 @@ export default function NavMenu({title}) {
     <div className={styles.div_header}>
       <div className={styles.header__logoTitle}>
           <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-          <h1 className={styles.header__h1}>Bienvenidos</h1>
+          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
       </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
             <div className={styles.header__nav__Responsive+" "+styles.menuBurguerOnOff}>
                 <div className={styles.header__nav__Responsive__flexor}>
-                    <Link href="/"><a className={styles.header__nav__a}>Portafolio</a></Link>
-                    <Link href="/contact"><a className={styles.header__nav__a} >Contactame</a></Link>
-                    <Link href="/more_about_me"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected}>Mas sobre mi</a></Link>
+                    <Link href="/"><a className={styles.header__nav__a+" textUbuntu tR_medium"}>Portafolio</a></Link>
+                    <Link href="/contact"><a className={styles.header__nav__a+" textUbuntu tR_medium"} >Contactame</a></Link>
+                    <Link href="/more_about_me"><a className={styles.header__nav__a+" "+styles.header__nav__a_Selected+" textUbuntu tR_medium"}>Mas sobre mi</a></Link>
                 </div>
             </div>
         </nav>

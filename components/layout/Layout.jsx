@@ -13,7 +13,7 @@ export default function Layout({children, title = "no-hay-titulo"}) {
             <link rel="icon" href="/favicon.ico" />
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500&display=swap" rel="stylesheet"/>
+            <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Ubuntu:ital,wght@0,400;1,500&display=swap" rel="stylesheet"/>
         </Head>
         <NavMenu title= {title}/>
 
