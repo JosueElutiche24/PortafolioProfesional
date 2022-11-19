@@ -9,9 +9,8 @@
 .Card{
     position: relative;
     margin: 0.5rem;
-
     width: 18vw;
-    height: 40vh;
+    height: 18vw;
 }
 
 .Faces{
@@ -19,8 +18,8 @@
     backface-visibility: hidden;
     overflow: hidden;
     transition: 1.5s;
-    margin: 0.5rem;
-    padding: 1rem;
+    margin: 1vw;
+    padding: 1vw;
     width: 18vw;
     height: 18vw;
 
@@ -35,7 +34,6 @@
         .Front__icon{
             width: 100%;
             height: 100%;
-            /* margin-left: 10%; */
         }
 
 .Back{
@@ -49,8 +47,8 @@
     justify-content: center;
 }
     .Back p{
-        font-size: 1.5rem;
-        font-family: cursive;
+        font-size:  calc(0.8em + 0.8vw);
+        font-family: 'Ubuntu', sans-serif; 
     }
 
 .Card:hover .Front{

@@ -1,32 +1,32 @@
 .sectionAbout__div1{
     background-color: #06283D;
     border-radius: 10px;
-    padding: 3rem;
+    padding: 3vw;
     margin: 1rem 5rem;
     color: #DFF6FF;
 }
 
     .sectionAbout__div1__H2{
-        font-size: 2.5rem;
         text-align: center;
         margin-bottom: 2rem;
     }
 
 .sectionAbout__div1__Flexor{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     display: flex;
-    background-color: aqua;
+    
 }
 
     .sectionAbout__div1__Parrafos{
         width: 60%;
-        margin: 0rem 5rem 0rem 0rem;
+        margin: 0 5vh 0 0;
         /* margin: 0 5rem 1rem 7rem; */
     }
         .sectionAbout__div1__P{
             /* font-size: 1.2rem; */
             text-align: justify;
+            margin-bottom: 1rem
         }
     .sectionAbout__div1__IMGContainer{
         width: 40vh;
@@ -44,22 +44,24 @@
 
 
     .sectionAbout__div1__ContainerBtn{
-         width: 60%;
+         width: 100%;
         display: flex;
         justify-content: center;
     } 
         .sectionAbout__div1__Btn{
             margin: 0rem 0.5rem;
+            padding: 0 1vw;
             text-decoration: none;
             color: #DFF6FF;
             transition: 0.5s;
-            width: 12vw;
+            min-width: 12vw;
             height: 5vh;
             display: inline-block;
             outline: #DFF6FF 1px solid;  
             justify-content: center;
             display: flex;
             align-items: center;
+            white-space: nowrap;
         }  
         .sectionAbout__div1__Btn:hover{
             background-color: #DFF6FF;
@@ -76,72 +78,64 @@
     padding: 3rem;
     margin: 1rem 0.5rem;
     color: #DFF6FF;
-
 }
 
         .sectionAbout__div2__h2Knowledge{
-            font-size: 2rem;
             text-align: center;
         }
 
         .sectionAbout__div2__pKnowledge{
-            font-size: 1.2rem;
-            line-height: 1.5rem;
             width: 80%;
             margin: 0 auto;
         }
-        .sectionAbout__div2__h2Skills{
-            font-size: 2rem;
-            text-align: center;
+        .divConocimientos{
         }
 
 @media only screen and (max-width: 425px){
     .sectionAbout__div1{
-        background-color: #06283D;
         border-radius: 0;
         padding: 1.5rem 0.5rem;
         margin: 1rem 0;
-        color: #DFF6FF;
     }
-    
-    .sectionAbout__div1__{
-
-    }
-    
-            .sectionAbout__div1__P{
-
-            }
-    
-            .sectionAbout__div1__ContainerBtn{
-
-            }
-    
-            .sectionAbout__div1__Btn{
-
-            }
-            
-            .sectionAbout__div1__Btn:hover{
- 
-            }
-    
             .sectionAbout__div1__H2{
-
+                margin-bottom: 0.8rem;
             }
-    
-        .sectionAbout__div1__{
+            .sectionAbout__div1__Flexor{
+                width: 100%;
+            }
+            .sectionAbout__div1__Parrafos{
+                margin: 0rem 0.8rem 0rem 0.3rem;
+                width: 70;
+            }
+                .sectionAbout__div1__P{
+                    font-size:  calc(0.7em + 0.7vw);
+                    line-height: 1em;
+                } 
+                .sectionAbout__div1__IMGContainer{
+                    width: 30vh;
+                    height: 30vh;
+                }         
+                    .sectionAbout__div1__IMG{         
+                    }             
+                    .sectionAbout__div1 img:hover{               
+                    }
+                .sectionAbout__div1__ContainerBtn{
 
-        }
+                }
+        
+                .sectionAbout__div1__Btn{
+                    font-size:  calc(0.7em + 0.7vw);
+                    line-height: 1em;
+                }
+                
+                .sectionAbout__div1__Btn:hover{
     
-        .sectionAbout__div1__IMG{
- 
-        }
-    
-        .sectionAbout__div1 img:hover{
-            
-        }
-    
+                }
+
     .sectionAbout__div2{
-
+        border-radius: 0;
+        padding: 1.5rem 0.5rem;
+        margin: 1rem 0;
     }
     
             .sectionAbout__div2__h2Knowledge{

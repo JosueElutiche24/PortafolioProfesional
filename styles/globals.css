@@ -12,8 +12,8 @@ body{
 }
 
 .tR_medium{
-    font-size:  calc(0.7em + 1vw);
-    line-height: 1em;
+    font-size:  calc(0.8em + 0.8vw);
+    line-height: 1.1em;
 }
 
 .tR_small{
