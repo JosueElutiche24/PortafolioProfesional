@@ -7,8 +7,7 @@
 }
 
 .sectionPortfolio__h2{
-    text-align: center;
-    font-size: 2rem;
+    text-align: center; 
     margin-bottom: 2rem;
 }
 
@@ -22,186 +21,292 @@
 
     .divProjectCards{
         margin-bottom: 2rem;
-        position: relative;
         width: 50vw;
-        height: 50vh;
-        overflow: hidden;
-        transition: width 1s;
-    }
+        height: 45vh;
+        display: flex;
 
-    .subdivProjectCards{
-        width: 100%;
-        height: 100%;
-        display: flex; 
         border-radius: 5px;
-        border: 3px solid #DFF6FF;
-        position: absolute;
-        backface-visibility: hidden;
-        overflow: hidden;
-        transition: 1.5s;
+        border: 2px solid #DFF6FF;
+        transition: 1s;
         background-color: #06283D;
+    }.divProjectCards__full{
+        width: 80vw;
     }
 
-    .ProjectCard__pt1{
-        width: 18vw;
+    .ZonaImg{
+        width: 20vw;
         height: 100%;
         position: relative;
+    }.ZonaImg__full{
+
     }
-
-            .ProjectCard__pt1__img{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-
-            .ProjectCard__pt1__h2{
-                position: absolute;
-                top: 0;
-                width: 100%;
-                height: 50px;
-                font-size: 1.5rem;
-                justify-content: center;
-                display: flex;
-                align-items: center;
-
-                background-color: rgba(0, 0, 0, 0.3);
-            }
-
-    .ProjectCard__pt2{
-        width: 32vw;
+        .ZonaImg__h2{
+            position: absolute;
+            background-color: rgba(0, 0, 0, .3);
+            color: white;
+            width: 100%;
+            height: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ZonaImg__img{
+            width: 100%;
+            height: 100%;
+        }
+    
+    .ZonaDesplegable{
+        width: 30vw;
         height: 100%;
-        position: relative;
-        padding: 0.5rem 1.5rem;
+        border-left: #DFF6FF 2px solid;
+    }.ZonaDesplegable__full{
+        width: 60vw;
     }
 
-            .ProjectCard__pt2__h2{
-                width: 100%;
-                height: 50px;
-                font-size: 1.5rem;
-                
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        .ZonaDesplegable_PartVisible{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+            .PVisible__h2{
+                text-align: center;
+                margin: 1vh 0;
             }
-
-            .ProjectCard__pt2__p{
-                text-align: justify;
+            .PVisible__p{
+                padding: 0 1vw;
+                /* text-align: justify; */
             }
-
-            .ProjectCard__pt2__btn{
-                position: relative;
-                top: 16vh;
-                left: 9vw;
+            .PVisible__btn{
+                position: absolute;
+                bottom: 5%;
+                left: 25%;        
+                min-width: 50%;
                 color: #06283D;
                 background-color: #DFF6FF;
                 padding: 0.5rem;
                 border-radius: 5px;
                 transition: 0.3s;
-            }
-            .ProjectCard__pt2__btn:hover{
+                margin: 0 auto;
+            }.PVisible__btn:hover{
                 background-color: #06283D;
                 outline: #DFF6FF 1px solid;
                 color: #DFF6FF;
             }
 
-    .ProjectCard__pt3{
-        width: 0%;
-        display: flex;
-    }
+        .ZonaDesplegable_PartOculta{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow-y: hidden;
+        }
 
-    .ProjectCard__pt3__div1{
-        width: 50vw;
-        padding: 1rem;
-    }
-            .ProjectCard__pt3__div1__subdiv1{
-                width: 100%;
-                height: 80%;
+            .POulta_Div1{
+                width: 60%;
+                overflow-y: auto;
+            }.POulta_Div1::-webkit-scrollbar{
+                width: 0.8vw;
+            }.POulta_Div1::-webkit-scrollbar-thumb{
+                background-color: #DFF6FF;
+                border-radius: 5px;
             }
+                .POulta_Div1__subdiv1{
+                    min-height: 70%;
+                }
                     .titleConocimientoEmpleado{
-                        font-family: cursive;
-                        font-size: 1.3rem;
                         text-align: center;
-                        padding-bottom: 0.5rem;
+                        margin: 1vh 1vw;
                     }
                     .textConocimientoEmpleado{
-                        margin: 0 1.5rem;
-                        padding-bottom: 0.5rem;
-                        text-align: justify;
+                        padding: 0 1vw;     
                     }
-            .ProjectCard__pt3__div1__subdiv2{
-                width: 100%;
-                height: 20%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                .POulta_Div1__subdiv2{
+                    height: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .btnClosedProject{
+
+                        background-color: #DFF6FF;
+                        color: #06283D;
+                        transition: 0.3s;
+                        padding: 0.5rem;
+                        border-radius: 5px;
+                    }.btnClosedProject:hover{
+                        background-color: #06283D;
+                        outline: #DFF6FF 1px solid;
+                        color: #DFF6FF;
+                    }
+                    
+            .POulta_Div2{
+                border-left: #DFF6FF 2px solid;
+                width: 40%;
+                overflow-y: auto;
+                padding-bottom: 1vh;
+            }.POulta_Div2::-webkit-scrollbar{
+                width: 0.8vw;
+            }.POulta_Div2::-webkit-scrollbar-thumb{
+                background-color: #DFF6FF;
+                border-radius: 5px;
             }
-                    .P_enlaceGit{
+                .titleTecnologías{
+                    text-align: center;
+                    margin: 1vh 1vw;
+                }
+                .Tecnologias__div{
+                    margin: 1.5vh auto;
+                    width: 90%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                .Tecnologias__item{
+                    background-color: #DFF6FF;
+                    color: #06283D;
+                    border-radius: 5px ;
+                    padding: 0.1rem 0.5rem;
+                    margin: 0.1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .Enlaces__div{
+                    
+                }
+                    .P_enlaceSitio{
                         text-align: center;
-                        padding-bottom: 0.5rem;
-                    }
-                    .P_enlaceGit a{
+                        padding-bottom: 0.5vh;
+                    }.P_enlaceSitio a{
                         text-decoration: underline;
                         color: white;
                     }
-        .btnClosedProject{
-            background-color: #DFF6FF;
-            color: #06283D;
-            transition: 0.3s;
-            padding: 0.5rem;
-            border-radius: 5px;
-            /* position: relative; */
-            /* top: 10px;
-            left: 9vw; */
-        }
+                    .P_enlaceGit{
+                        text-align: center;
+                        padding-bottom: 0.5vh;
+                    }.P_enlaceGit a{
+                        text-decoration: underline;
+                        color: white;
+                    }
 
-        .btnClosedProject:hover{
-            background-color: #06283D;
-            outline: #DFF6FF 1px solid;
-            color: #DFF6FF;
-        }
 
-    .ProjectCard__pt3__div2{
-        width: 30vw;
-        border-left: #DFF6FF solid 2px;
-        padding: 1rem;
-    }
-        .titleTecnologías{
-            font-family: cursive;
-            font-size: 1.3rem;
-            text-align: center;
-            padding-bottom: 0.5rem;
-        }
-        .Tecnologias__div{
-            margin: 1rem auto;
-            width: 90%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .Tecnologias__item{
-            background-color: #DFF6FF;
-            color: #06283D;
-            border-radius: 5px ;
-            padding: 0.1rem 0.5rem;
-            margin: 0.1rem;
-            font-family: monospace;
-            font-size: 1.11rem;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        /* .ProjectCard__pt3__div2__subDiv{
-
-        } */
-.flipdivProjectCards{
-    width: 80vw;
-}
-
-.flipProjectCard__pt2{
+.hidden{
     display: none;
 }
 
-.flipProjectCard__pt3{
-    width: 62vw;
+@media only screen and (max-width: 425px){    
+    .sectionPortfolio{
+        padding: 0rem;
+        padding-top: 1rem;
+        margin: 1rem 0;
+        border-radius: 0;
+    }
+    
+    .sectionPortfolio__h2{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    
+    .sectionPortfolio__divProjects{
+        
+    }
+    
+    /* Estilos de ProjectCard */
+ 
+    .divProjectCards{
+        width: 80vw;
+        height: 75vh;
+        flex-direction: column;
+    }.divProjectCards__full{
+        height: 95vh;
+    }
+
+    .ZonaImg{
+        width: 100%;
+        height: 30vh;
+    }.ZonaImg__full{
+
+    }
+        .ZonaImg__h2{
+            height: 20%;
+            font-size:  calc(1em + 1.5vw);
+        }
+
+    .ZonaDesplegable{
+        width: 100%;
+        height: 40vh;
+        border-left: none;
+        border-top: #DFF6FF 2px solid;
+    }.ZonaDesplegable__full{
+        height: 65vh;
+    }
+
+    
+        .ZonaDesplegable_PartVisible{
+  
+        }
+            .PVisible__h2{
+                font-size:  calc(1em + 1.5vw);
+            }
+            .PVisible__p{
+                padding: 0 2.5vw;
+                font-size:  calc(0.8em + 0.8vw);
+                line-height: 1.1em;
+            }
+            .PVisible__btn{
+                font-size:  calc(0.8em + 0.8vw);
+            }.PVisible__btn:hover{
+
+            }
+
+        .ZonaDesplegable_PartOculta{
+                flex-direction: column;
+        }
+            .POulta_Div1{
+                width: 100%;
+                height: 40vh;
+            }
+                .POulta_Div1__subdiv1{
+
+                }
+                .titleConocimientoEmpleado{
+                    font-size:  calc(1em + 1.5vw);
+                }
+                .textConocimientoEmpleado{
+                    padding: 0 2vw;
+                    text-align: justify;
+                    font-size:  calc(0.8em + 0.8vw);
+                    line-height: 1.1em;
+                }
+            .POulta_Div1__subdiv2{
+
+            }
+                .btnClosedProject{
+                    font-size:  calc(0.8em + 0.8vw);
+                }
+
+            .POulta_Div2{
+                width: 100%;
+                height: 25vh;
+                border-left: none;
+                border-top: #DFF6FF 2px solid;
+            }
+                .titleTecnologías{
+                    font-size:  calc(1em + 1.5vw);
+                }
+                .Tecnologias__div{
+
+                }
+                .Tecnologias__item{
+                    font-size:  calc(0.8em + 0.8vw);
+                    line-height: 1.1em;
+                }
+
+                    .P_enlaceSitio{
+                        font-size:  calc(0.8em + 0.8vw);
+                        line-height: 1.1em;
+                    }
+                    .P_enlaceGit{
+                        font-size:  calc(0.8em + 0.8vw);
+                        line-height: 1.1em;
+                    }
 }
+

@@ -5,6 +5,12 @@ body{
     font-size: 1.2rem;
     /* font-family: 'Hind Madurai', sans-serif;
     font-family: 'Ubuntu', sans-serif; */
+}body::-webkit-scrollbar{
+    width: 1.2vw;
+    background-color: #DFF6FF;
+}body::-webkit-scrollbar-thumb{
+    background-color: #06283D;
+    border-radius: 5px;
 }
 
 .textUbuntu{

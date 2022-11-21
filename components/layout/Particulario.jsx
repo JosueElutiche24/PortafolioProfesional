@@ -10,7 +10,6 @@ function Particulario(){
     }, []);
 
     const particlesLoaded = useCallback(async (container) => {
-        await console.log("rosa");
     }, []);
 
     return (
