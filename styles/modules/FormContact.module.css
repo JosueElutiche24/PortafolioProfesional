@@ -7,8 +7,6 @@
 }
 
 .principalTitle{
-    font-family: cursive;
-    font-size: 2rem ;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -138,4 +136,89 @@
     color: #06283D;
     border-radius: 5px;
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 425px) {
+    .principalDiv{
+        border-radius: 0;
+        padding: 3vh 0;
+        margin: 3vh 0;
+    }
+    
+    .principalTitle{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .Form{
+        width: 90vw;
+        padding: 3vw;
+        outline: #DFF6FF 2px solid;
+    }
+    
+    .inputContainer{
+        padding: 1.5vw;
+    }
+            .inputContainer label{
+                font-size:  calc(0.8em + 0.8vw);
+                padding:  0 1vh;
+            }
+            .iName, .iEmail{
+                width: 55%;
+
+                font-size:  calc(0.5em + 0.7vw);
+                line-height: 1em;
+
+            }
+            .iMessage{
+                width: 75%;
+                font-size:  calc(0.5em + 0.7vw);
+                line-height: 1em;
+            }
+   
+.btnSend{
+    width: 18vw;
+    font-size:  calc(0.8em + 0.8vw);
+}
+        .btnSendDesconected{
+
+        }
+
+.alertDiv{
+
+}
+        .alert{
+            text-align: center;
+}
+        .alert_p{
+            font-size:  calc(0.8em + 0.8vw);
+            line-height: 1.1em;
+        }
+
+.errorEncontrado{
+
+}
+
+/* Estilos poara el Modal de respuesta */
+
+.Modal{
+    top: 40vh;
+    left: 10vw;
+    width: 80vw;
+    height: 30vh;
+    padding: 1vw;
+}
+.Modal_P{
+    font-size:  calc(0.8em + 0.8vw);
+    line-height: 1.1em;
+    margin: 0 1rem;
+}
+.Modal_btn{
+    font-size:  calc(0.8em + 0.8vw);
+    line-height: 1.1em;
+    width: 20vw;
+}
+.Modal_btn:hover{
+
+}
 }

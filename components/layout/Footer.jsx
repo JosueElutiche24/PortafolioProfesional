@@ -14,9 +14,9 @@ function Footer({title}) {
                 <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a> */}
             </div>
             <div className={styles.Footer__Pt2}>
-                <Link href="/contact"><a className={styles.a}>contactame</a></Link>
+                <Link href="/contact"><a className={styles.a+" tR_medium"}>contactame</a></Link>
                 <p className={styles.p1}>|</p>
-                <p className={styles.p2}>Gracias por ver</p>
+                <p className={styles.p2+" tR_medium"}>Gracias por ver</p>
             </div>
         </div>
     );
@@ -28,7 +28,7 @@ function Footer({title}) {
                 <a className={styles.Footer__Pt1__items} href='https://www.linkedin.com/in/josue-guzman-754063256'><AiFillLinkedin/></a>
             </div>
             <div className={styles.Footer__Pt2}>
-                <p className={styles.p3}>Gracias por ver</p>
+                <p className={styles.p3+" tR_medium"}>Gracias por ver</p>
             </div>
         </div>
     );
@@ -42,9 +42,9 @@ function Footer({title}) {
                 <a className={styles.Footer__Pt1__items} href='#'><AiFillGithub/></a> */}
             </div>
             <div className={styles.Footer__Pt2}>
-                <Link href="/contact"><a className={styles.a}>contactame</a></Link>
+                <Link href="/contact"><a className={styles.a+" tR_medium"}>contactame</a></Link>
                 <p className={styles.p1}>|</p>
-                <p className={styles.p2}>Gracias por ver</p>
+                <p className={styles.p2+" tR_medium"}>Gracias por ver</p>
             </div>
         </div>
     );

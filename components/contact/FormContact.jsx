@@ -16,10 +16,8 @@ export default function FormContact() {
         let iName = document.querySelector("."+styles.iName)
         let iEmail = document.querySelector("."+styles.iEmail)
         let iMessage = document.querySelector("."+styles.iMessage)
-        let btnSend = document.querySelector("."+styles.btnSend)
         let errors  = [];
         event.preventDefault()
-        btnSend.classList.add(styles.btnSendDesconected)
         // area de resets
             setValidacion([]);
             iName.classList.remove(styles.errorEncontrado)
@@ -48,13 +46,12 @@ export default function FormContact() {
                 setModalValue("su mensaje se ha enviado con éxito.")})
             .catch(error=>{
                 setModalActive(true)
-                btnSend.classList.remove(styles.btnSendDesconected)
                 setModalValue("Su mensaje no se ha podido enviar, ha ocurrido un error.")})
         }
     }
   return (
     <div className={styles.principalDiv}>
-        <h3 className={styles.principalTitle}>Contáctame</h3>
+        <h3 className={styles.principalTitle+" tR_Xlarge"}>Contáctame</h3>
         <form className={styles.Form} onSubmit={handleSubmit}>
             <div className={styles.inputContainer}>
                 <label htmlFor="">Nombre: </label>

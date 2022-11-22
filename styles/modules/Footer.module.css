@@ -1,7 +1,7 @@
 .Footer{
     background-color: #06283D;
     color: #DFF6FF;
-    padding:  1rem;
+    padding:  2vw;
 }
 
 .Footer__Pt1{
@@ -15,7 +15,6 @@
 }
         .Footer__Pt1 p{
             padding: 0.5rem;
-            font-size: 2rem;
         }
 
         .Footer__Pt1__items svg{
@@ -43,7 +42,6 @@
         .p1{
             padding: 0.5rem;
             margin-left: 2.5rem;
-            font-size: 2rem;
 }
         .p2{
             padding: 0.5rem;
@@ -51,4 +49,47 @@
 }
         .p3{
             padding: 0.5rem;
+}
+
+@media only screen and (max-width: 425px){
+    .Footer{
+
+    }
+    
+    .Footer__Pt1{
+        height: 8vh;
+        padding: 0;
+    }
+            .Footer__Pt1 p{
+
+            }
+    
+            .Footer__Pt1__items svg{
+                width: 7vh;
+                height: 7vh;
+            }
+    
+    .Footer__Pt2{
+
+    }
+            .a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    }
+            .a:hover{
+
+            }
+            .p1{
+                padding: 0.5rem;
+                margin-left: 2.5rem;
+    }
+            .p2{
+                padding: 0.5rem;
+                margin-left: 2rem;
+    }
+            .p3{
+                padding: 0.5rem;
+    }
+    
 }
