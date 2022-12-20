@@ -24,20 +24,20 @@ export default function About_me() {
         <Layout title='more_about_me'>
             <section className={styles.sector_primary}>
               <div className={styles.div_principal}>
-                <h2 className={styles.div_principal__H2}>Sobre mi :</h2>
-                <p className={styles.div_principal__P}>Me gusta crear y me gusta aprender. Gracias a estas dos de mis cualidades fue que decidí aventurarme en el mundo del desarrollo de software... y me encantó !!.</p>
-                <p className={styles.div_principal__P}>Comencé aprendiendo con el lenguaje JavaScript debido a que se puede crear contenido para diversas áreas de la programación. Actualmente estoy enfocandome en el desarrollo web , pero también me encantaría obtener conocimientos sobre el desarollo de aplicaciones de servidor y aplicaciones moviles.</p>
-                <p className={styles.div_principal__P}>A continuación encontrarás mas detalles sobre: lo que me gusta hacer, nuevos aprendizages y proyectos que estoy desarrolando.</p>
+                <h2 className={styles.div_principal__H2+" textUbuntu tR_Xlarge"}>Sobre mi :</h2>
+                <p className={styles.div_principal__P+" tR_medium"}>Me gusta crear y me gusta aprender. Gracias a estas dos de mis cualidades fue que decidí aventurarme en el mundo del desarrollo de software... y me encantó !!.</p>
+                <p className={styles.div_principal__P+" tR_medium"}>Comencé aprendiendo con el lenguaje JavaScript debido a que se puede crear contenido para diversas áreas de la programación. Actualmente estoy enfocandome en el desarrollo web , pero también me encantaría obtener conocimientos sobre el desarollo de aplicaciones de servidor y aplicaciones moviles.</p>
+                <p className={styles.div_principal__P+" tR_medium"}>A continuación encontrarás mas detalles sobre: lo que me gusta hacer, nuevos aprendizages y proyectos que estoy desarrolando.</p>
               </div>
             </section>
 
             <section className={styles.sector_secundary}>
                 <div className={styles.TAB}>
                   <nav className={styles.tabNavigator}>
-                      <button onClick={()=>changeTab(1)} className={HandleTab == 1? styles.tabNavigator__btn+" "+styles.tabNavigator__left : styles.tabNavigator__btn+" "+styles.tabNavigator__left+" "+styles.tabNavigator__btnOFF}>Cosas que quiero aprender</button>
-                      <button onClick={()=>changeTab(2)} className={HandleTab == 2? styles.tabNavigator__btn : styles.tabNavigator__btn+" "+styles.tabNavigator__btnOFF}>Proyectos en desarrollo</button>
-                      <button onClick={()=>changeTab(3)} className={HandleTab == 3? styles.tabNavigator__btn : styles.tabNavigator__btn+" "+styles.tabNavigator__btnOFF}>Hobbies</button>
-                      <button onClick={()=>changeTab(4)} className={HandleTab == 4? styles.tabNavigator__btn+" "+styles.tabNavigator__right : styles.tabNavigator__btn+" "+styles.tabNavigator__right+" "+styles.tabNavigator__btnOFF}>Habilidades</button>
+                      <button onClick={()=>changeTab(1)} className={HandleTab == 1? styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__left : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__left+" "+styles.tabNavigator__btnOFF}>Cosas que estoy aprendiendo</button>
+                      <button onClick={()=>changeTab(2)} className={HandleTab == 2? styles.tabNavigator__btn+" tR_medium" : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__btnOFF}>Proyectos en desarrollo</button>
+                      <button onClick={()=>changeTab(3)} className={HandleTab == 3? styles.tabNavigator__btn+" tR_medium" : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__btnOFF}>Hobbies</button>
+                      <button onClick={()=>changeTab(4)} className={HandleTab == 4? styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__right : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__right+" "+styles.tabNavigator__btnOFF}>Habilidades</button>
                   </nav>
                   <div className={styles.tabContainer}>
                       <div className={HandleTab == 1? styles.SectionTab+" "+styles.divLearning : styles.SectionTabOFF}>

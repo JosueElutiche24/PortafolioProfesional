@@ -8,11 +8,11 @@ function Learning({Title, Text, Image, children}){
                 <div className={styles.learningCard__pt1}>
                     {/* <div className={styles.learningCard__pt1__icon}>{React.createElement(FontAwesome[Image])}</div> */}
                     <div className={styles.learningCard__pt1__icon}>{children}</div>
-                    <h2 className={styles.learningCard__pt1__h2}>{Title}</h2>
+                    {/* <h2 className={styles.learningCard__pt1__h2+" tR_small"}>{Title}</h2> */}
                 </div>
                 <div className={styles.learningCard__pt2}>
-                    <h2 className={styles.learningCard__pt2__h2}>{Title}</h2>
-                    <p className={styles.learningCard__pt2__p}>{Text}</p>
+                    <h2 className={styles.learningCard__pt2__h2+" tR_medium"}>{Title}</h2>
+                    <p className={styles.learningCard__pt2__p+" tR_small"}>{Text}</p>
                 </div>
         </div>
     )

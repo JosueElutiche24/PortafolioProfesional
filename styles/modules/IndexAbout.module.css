@@ -23,16 +23,12 @@ DFF6FF blanco azulado
 }
 
 .div_principal__H2{
-    font-size: 2rem;
-    font-family: cursive;
-    line-height: 2rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 .div_principal__P{
+    text-align: justify;
     width: 80%;
-    font-size: 1.3rem;
-    line-height: 1.5rem;
     margin: 0.5rem auto;
 }
 
@@ -66,8 +62,6 @@ DFF6FF blanco azulado
                 background-color: #083b5a;
                 width: 25%;
                 outline: #DFF6FF 2px solid;
-                font-size: 1.3rem;
-                font-family: cursive;
                 transition: 0.3s;
             }
             .tabNavigator__btnOFF{
@@ -132,4 +126,69 @@ DFF6FF blanco azulado
     width: 100%;
     margin-bottom: 2rem;
     position: relative;
+}
+
+@media only screen and (max-width: 425px){
+    .sector_primary{
+        border-radius: 0;
+        padding: 1rem;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    .div_principal__H2{
+        margin-bottom: 0.5rem;
+    }
+    .div_principal__P{
+        text-align: justify;
+        width: 95%;
+        margin: 0.7rem auto;
+    }
+    /*  Estilos para la segunda seccion */
+    .sector_secundary{
+        padding: 0;
+        margin: 0.8rem 0;
+    }
+    .TAB{
+        border-radius: 0;
+        outline: #DFF6FF 1px solid;
+    }
+    .tabNavigator{
+        width: 100%;
+        height: 12vh;
+        outline: #DFF6FF 1px solid;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+            .tabNavigator__btn{
+                outline: #DFF6FF 1px solid;
+                transition: 0.3s;
+            }
+            .tabNavigator__right{
+                border-top-right-radius: 0;
+            }
+            .tabNavigator__left{
+                border-top-left-radius: 0;
+            }
+
+    .tabContainer{
+    }
+        .divDevProjects{
+            padding-top: 0.8rem;
+        }
+        
+        .divSkills{   
+            justify-content: space-around;
+
+            margin-bottom: 0.8rem;
+        }
+                    
+        .divLearning{
+        }
+                    
+        .divHobbies{
+            justify-content: space-around;
+            margin-bottom: 0.8rem;
+
+        }
+        
 }

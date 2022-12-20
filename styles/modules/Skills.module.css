@@ -36,7 +36,6 @@
     width: 100%;
     height: 50px;
     background-color: rgba(0,0,0,.4);
-    font-size: 1.5rem;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -48,7 +47,6 @@
     top: 2vh;
     width: 100%;
     height: 50px;
-    font-size: 1.5rem;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -61,8 +59,6 @@
 }
 
 .skillCard__back__p{
-    font-size: 0.8rem;
-    text-align: justify;
     margin: 4rem 1.5rem 0rem 1.5rem;
 }
 
@@ -74,19 +70,21 @@
     transform: perspective(600px) rotateY(360deg);
 }
 
-/* Animations               la animación funciona perfectamente pero da mucho lag, por lo cual será anulada. El sistema de estilos en el componente jsx sigue activo, auque es inutil
-@keyframes Brillito {
-    from{
-        box-shadow: 0 1px 2px white;
+@media only screen and (max-width: 425px){
+    .skillCard{
+        min-width: 150px;
     }
-    to{
-        box-shadow: 0 5px 10px white;
+
+    .skillCard__back__h2{
+        position: static;
+        width: 100%;
+        height: 30px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .skillCard__back__p{
+        margin: 0 0.8rem 0rem 0.8rem;
     }
 }
-
- .faces{
-    animation-duration: 3s;
-    animation-name: Brillito;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-} */

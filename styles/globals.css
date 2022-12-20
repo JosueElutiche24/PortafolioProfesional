@@ -24,7 +24,7 @@ body{
 
 .tR_small{
     font-size:  calc(0.5em + 0.7vw);
-    line-height: 1em;
+    line-height: 1.2em;
 }
 .tR_large{
     font-size:  calc(1.3em + 1.5vw);
