@@ -1,3 +1,9 @@
+/* Paleta de colores
+DFF6FF blanco azulado
+93d7f1 Celeste
+0e5581 Azul medio
+083b5a Azul casi oscuro
+06283D Azul oscuro */
 
 .sectionContainer{
     display: flex;
@@ -9,8 +15,8 @@
 .Card{
     position: relative;
     margin: 0.5rem;
-    width: 18vw;
-    height: 18vw;
+    width: 13vw;
+    height: 13vw;
 }
 
 .Faces{
@@ -18,10 +24,11 @@
     backface-visibility: hidden;
     overflow: hidden;
     transition: 1.5s;
-    margin: 1vw;
-    padding: 1vw;
-    width: 18vw;
-    height: 18vw;
+
+    /* margin: 1vw;
+    padding: 1vw; */
+    width: 13vw;
+    height: 13vw;
 
     border: 2px solid #DFF6FF;
     border-radius: 5px;
@@ -30,8 +37,10 @@
 
 .Front{
     transform: perspective(600px) rotateY(0deg);
+    background-color: #93d7f1;
+    border: 2px solid #06283D;
 }
-        .Front__icon{
+        .Front>img{
             width: 100%;
             height: 100%;
         }

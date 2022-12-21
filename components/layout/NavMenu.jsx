@@ -37,7 +37,7 @@ export default function NavMenu({title}) {
     </div>
     <div className={styles.divsubHeader}>
       <h1 className={styles.divsubHeader_h1+" textUbuntu tR_XXLlarge"}>Josué Guzman</h1>
-      <h2 className={styles.divsubHeader_h2+" textUbuntu tR_XXlarge"}>Desarrollador Frontend</h2>
+      <h2 className={styles.divsubHeader_h2+" textUbuntu tR_XXlarge"}>Desarrollador web fullstack</h2>
     </div>
 </header>
   )

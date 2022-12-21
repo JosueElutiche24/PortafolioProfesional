@@ -142,6 +142,7 @@
                 border-left: #DFF6FF 2px solid;
                 width: 40%;
                 overflow-y: auto;
+                overflow-x: hidden;
                 padding-bottom: 1vh;
             }.POulta_Div2::-webkit-scrollbar{
                 width: 0.8vw;

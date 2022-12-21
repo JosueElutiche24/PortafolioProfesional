@@ -1,5 +1,4 @@
-import {DiNodejsSmall, DiReact, DiGithubBadge} from "react-icons/di"
-import {SiElectron, SiTailwindcss, SiExpress, SiBootstrap, SiMysql}from "react-icons/si"
+import Image from "next/image.js";
 import {NextIcon} from "../Icons.Svg.jsx";
 
 import styles from "../../styles/modules/Knowledge.module.css"
@@ -7,80 +6,99 @@ import styles from "../../styles/modules/Knowledge.module.css"
 function Knowledge(){
 
     return(
-        <section className={styles.sectionContainer}>
+        <div className={styles.sectionContainer}>
+
            <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <DiReact className={styles.Front__icon}/>
+                    <img src="/icons/react-icon.png"/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>React JS</p>
+                    <p>React</p>
                 </div>
             </div>
+
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <SiTailwindcss className={styles.Front__icon}/>
+                    <img src="/icons/css3-icon.png"/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>Tailwind</p>
+                    <p>Css</p>
                 </div>
             </div>
+
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <DiNodejsSmall className={styles.Front__icon}/>
+                    <img src="/icons/nextjs-icon.png"/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>Node JS</p>
+                    <p>Next Js</p>
                 </div>
             </div>
+
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <SiMysql className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>MySql</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <SiElectron className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>Electron</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <DiGithubBadge className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>Git y Github</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <SiBootstrap className={styles.Front__icon}/>
-                </div>
-                <div className={styles.Faces +" "+styles.Back}>
-                    <p>Bootstrap</p>
-                </div>
-            </div>
-            <div className={styles.Card}>
-                <div className={styles.Faces +" "+styles.Front}>
-                    <SiExpress className={styles.Front__icon}/>
+                    <img src="/icons/express-icon.png"/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
                     <p>Express</p>
                 </div>
             </div>
+
             <div className={styles.Card}>
                 <div className={styles.Faces +" "+styles.Front}>
-                    <NextIcon className={styles.Front__icon}/>
+                    <img src="/icons/mysql-icon.png"/>
                 </div>
                 <div className={styles.Faces +" "+styles.Back}>
-                    <p>NextJS</p>
+                    <p>MySql</p>
                 </div>
             </div>
-        </section>
+
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <img src="/icons/nodejs-icon.png"/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Node Js</p>
+                </div>
+            </div>
+
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <img src="/icons/typescript-icon.png"/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Typescript</p>
+                </div>
+            </div>
+
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <img src="/icons/mongodb-icon.png"/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <img src="/icons/nestjs-icon.png"/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Nest Js</p>
+                </div>
+            </div>
+
+            <div className={styles.Card}>
+                <div className={styles.Faces +" "+styles.Front}>
+                    <img src="/icons/tailwind-icon.png"/>
+                </div>
+                <div className={styles.Faces +" "+styles.Back}>
+                    <p>Tailwind</p>
+                </div>
+            </div>
+
+        </div>
     );
 };
 

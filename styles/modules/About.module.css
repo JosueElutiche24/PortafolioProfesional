@@ -86,8 +86,17 @@
 
         .sectionAbout__div2__pKnowledge{
             width: 80%;
-            margin: 0 auto;
+            margin: 0.5rem  auto;
         }
+        .sectionAbout__div2_ul{
+            width: 100%;
+        }
+        .sectionAbout__div2_ul li{
+            list-style-type: circle;
+            width: 70%;
+            margin: 0.5rem  auto;
+        }
+
         .divConocimientos{
         }
 
