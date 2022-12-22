@@ -7,7 +7,7 @@ import Hobbies from "../../components/about/Hobbies";
 import ProjectCard from "../../components/portfolio/Projects"
 import { useState } from 'react';
 
-import { CSharpIcon, InglesIcon, NetIcon, TypescriptIcon } from '../../components/Icons.Svg';
+import { CSharpIcon} from '../../components/Icons.Svg';
 
 export default function About_me() {
   const [HandleTab, setHandleTab] = useState(1)
@@ -41,13 +41,13 @@ export default function About_me() {
                   </nav>
                   <div className={styles.tabContainer}>
                       <div className={HandleTab == 1? styles.SectionTab+" "+styles.divLearning : styles.SectionTabOFF}>
-                          <Learning Title="Graphql" Text="No disponible"></Learning>
-                          <Learning Title="Patrones de diseño" Text="No disponible"></Learning>
-                          <Learning Title=".NET" Text="No disponible"><CSharpIcon/></Learning>
+                          <Learning Title="Graphql" Text="Para optimizar la comunicacion entre el cliente y el servidor y para que los datos que se manipulen sean mas precisos. Aprender sobre esta tecnología es una de mis prioridades."><img src='/icons/graphql.png'/></Learning>
+                          <Learning Title="Patrones de diseño" Text="Considero que conocer patrones de diseño es bastante util para expandir la mente creativa de un programador. Me resultan muy interesantes y utiles en ciertas ocaciones."><img src='/icons/patrones_diseño.png'/></Learning>
+                          <Learning Title=".NET" Text=".Net me resulta un entorno de desarrollo moy interesante, en el que se pueden hacer aplicaciones de muchos tipos. Estoy comenzando a aprender sus distintas plantillas y a la vez reorzando mi programacion orientada a objetos."><CSharpIcon/></Learning>
                       </div>
                       <div className={HandleTab == 2? styles.SectionTab+" "+styles.divDevProjects : styles.SectionTabOFF}>
-                          <ProjectCard linkView ="No disponible" linkGithub="https://www.google.com/" Title="Sitio de encuestas" Image="/abstracview.jpg" Description="Los proyectos para esta sección aún estan en estado de desarrollo" ConocimientosEmpleados="No disponible" Tecnologias={["null", "null", "null", "null"]}/>
-                          <ProjectCard linkView ="No disponible" linkGithub="https://www.google.com/" Title="CV Generator" Image="/abstracview.jpg" Description="En este sitio web podrás crear tu curriculum de manera fácil y rápida utilizando nuestras plantillas con diseños increíbles." ConocimientosEmpleados="En el desarrollo de este proyecto se esta utilizando : Teilwin para el diseño de la interfaz. Manejo de varios formularios con React Hook Form. reacion y visualizacion de PDFs con create ReactPDF" Tecnologias={["react", "nextJS", "Teilwind", "React-Hoock-Form"]}/>
+                          <ProjectCard linkView ="No disponible" linkGithub="https://www.google.com/" Title="Sitio de encuestas" Image="/abstracview.jpg" Description="Sitio web tipo red social en el que los usuarios registrados pueden crear encuestas o participar en las encuestas de otros usuarios." ConocimientosEmpleados="No disponible" Tecnologias={["null", "null", "null", "null"]}/>
+                          <ProjectCard linkView ="No disponible" linkGithub="https://www.google.com/" Title="Generador de curriculum<" Image="/abstracview.jpg" Description="En este sitio web podrás crear tu curriculum de manera fácil y rápida utilizando nuestras plantillas con diseños increíbles." ConocimientosEmpleados="Manejo de amplio formulario con react hook form, envío de datos a aplicación backend que devuelve el pdf creado." Tecnologias={["react", "nextJS", "Teilwind", "React-Hoock-Form"]}/>
                       </div>
                       <div className={HandleTab == 3? styles.SectionTab+" "+styles.divHobbies: styles.SectionTabOFF}>
                           <Hobbies Image="/abstracview.jpg" Title= "Dibujar" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
