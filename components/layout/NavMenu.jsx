@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Particulario from './Particulario'
 import styles from "../../styles/modules/NavMenu.module.css"
 import Link from 'next/link'
@@ -6,12 +6,14 @@ import {TiThMenu} from "react-icons/ti"
 
 export default function NavMenu({title}) {
 
+  const [text, setText] = useState("Bienvenido")
   function BurguerBtn(){
     document.querySelector("."+styles.header__nav__Responsive).classList.toggle(styles.menuBurguerOnOff)
   }
 
   React.useEffect(()=>{
     window.addEventListener("scroll", ()=>{
+      setText("Josué Guzman")
       document.querySelector("."+styles.div_header).classList.toggle(styles.header__pinter, window.scrollY>1)
     })
   })
@@ -21,8 +23,8 @@ export default function NavMenu({title}) {
     <Particulario/>
     <div className={styles.div_header}>
         <div className={styles.header__logoTitle}>
-        <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-        <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
+        <div className={styles.header__imgContainer}><img src="/logoPortfolio.svg" className={styles.header__img}/></div>
+        <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>{text}</h1>
         </div>
         <nav className={styles.header__nav}>
             <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
@@ -46,8 +48,8 @@ export default function NavMenu({title}) {
     <Particulario/>
     <div className={styles.div_header}>
       <div className={styles.header__logoTitle}>
-          <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
+          <div className={styles.header__imgContainer}><img src="/logoPortfolio.svg" className={styles.header__img}/></div>
+          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Josué Guzman</h1>
       </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>
@@ -67,8 +69,8 @@ export default function NavMenu({title}) {
     <Particulario/>
     <div className={styles.div_header}>
       <div className={styles.header__logoTitle}>
-          <div className={styles.header__imgContainer}><img src="/LogoLaits1.png" className={styles.header__img}/></div>
-          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Bienvenidos</h1>
+          <div className={styles.header__imgContainer}><img src="/logoPortfolio.svg" className={styles.header__img}/></div>
+          <h1 className={styles.header__h1+" textUbuntu tR_Xlarge"}>Josué Guzman</h1>
       </div>
         <nav className={styles.header__nav}>
           <button onClick={BurguerBtn} className={styles.header__Burguer}><TiThMenu/></button>

@@ -42,7 +42,8 @@
     
     .header__h1{
         margin-left: 1.5rem;
-        width: 15vw;
+        width: 30vw;
+        white-space: nowrap;
         display: flex;
         align-items: center;      
     }
@@ -139,7 +140,7 @@
         }
 
         .header__h1{
-            
+
         }
 
         .header__nav__Responsive{
