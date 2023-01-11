@@ -14,7 +14,7 @@ function About(){
                             <p className={styles.sectionAbout__div1__P+ " tR_medium"}>Mi unica experiencia es la que se ve reflejada en los proyectos que puedes encontrar en las proximas secciones.</p>
                             <p className={styles.sectionAbout__div1__P+ " tR_medium"}>Hechate un ojo por todo este sitio. Y si por cualquier cosa deseas contactarme, yo estare feliz de recibir tu mensaje.</p>
                             <div className={styles.sectionAbout__div1__ContainerBtn}>
-                                <a href="https://drive.google.com/uc?export=download&id=1TemQ0cvHIE-lM5CEVKmo811rCG5k_lua" className={styles.sectionAbout__div1__Btn}>Descarga mi CV</a>
+                                <a href="https://drive.google.com/uc?export=download&id=1PulZ8zeYFuvj0oFnTwUc35v7eoHuenxl" className={styles.sectionAbout__div1__Btn}>Descarga mi CV</a>
                                 <Link href="/contact"><a className={styles.sectionAbout__div1__Btn}>Contactame</a></Link>
                             </div>
                         </div>
