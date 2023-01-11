@@ -12,7 +12,7 @@ export default function Layout({children, title = "no-hay-titulo"}) {
             <meta name="description" content="Portafolio personal de Josue Guzman"/>
             <link rel="icon" href="/favicon2.svg" />
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
             <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Ubuntu:ital,wght@0,400;1,500&display=swap" rel="stylesheet"/>
         </Head>
         <NavMenu title= {title}/>

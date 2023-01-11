@@ -24,10 +24,10 @@ export default function About_me() {
         <Layout title='more_about_me'>
             <section className={styles.sector_primary}>
               <div className={styles.div_principal}>
-                <h2 className={styles.div_principal__H2+" textUbuntu tR_Xlarge"}>Sobre mi :</h2>
-                <p className={styles.div_principal__P+" tR_medium"}>Me gusta crear y me gusta aprender. Gracias a estas dos de mis cualidades fue que decidí aventurarme en el mundo del desarrollo de software... y me encantó !!.</p>
-                <p className={styles.div_principal__P+" tR_medium"}>Comencé aprendiendo con el lenguaje JavaScript debido a que se puede crear contenido para diversas áreas de la programación. Actualmente estoy enfocandome en el desarrollo web , pero también me encantaría obtener conocimientos sobre el desarollo de aplicaciones de servidor y aplicaciones moviles.</p>
-                <p className={styles.div_principal__P+" tR_medium"}>A continuación encontrarás mas detalles sobre: lo que me gusta hacer, nuevos aprendizages y proyectos que estoy desarrolando.</p>
+                <h2 className={styles.div_principal__H2+" textUbuntu tR_Xlarge"}>Más sobre mi :</h2>
+                <p className={styles.div_principal__P+" tR_medium"}>Terminé mi carrera de bachillerato con orientación en computación en 2020 y a partir de entonces me he dedicado a desarrollar mis habilidades para hacer las cosas que me gustan, cosas como el dibujo, la música y la programación.</p>
+                <p className={styles.div_principal__P+" tR_medium"}>Actualmente ya he adquirido los conocimientos suficientes como para ser capaz de desarrollar proyectos completos de programación web y sigo aprendiendo para ser capaz de más.</p>
+                <p className={styles.div_principal__P+" tR_medium"}>En la siguiente sección podrás descubrir sobre las cosas que actualmente estoy aprendiendo, los proyectos que me encuentro desarrollando y otros detalles sobre mi perfil.</p>
               </div>
             </section>
 
@@ -36,23 +36,23 @@ export default function About_me() {
                   <nav className={styles.tabNavigator}>
                       <button onClick={()=>changeTab(1)} className={HandleTab == 1? styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__left : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__left+" "+styles.tabNavigator__btnOFF}>Cosas que estoy aprendiendo</button>
                       <button onClick={()=>changeTab(2)} className={HandleTab == 2? styles.tabNavigator__btn+" tR_medium" : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__btnOFF}>Proyectos en desarrollo</button>
-                      <button onClick={()=>changeTab(3)} className={HandleTab == 3? styles.tabNavigator__btn+" tR_medium" : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__btnOFF}>Hobbies</button>
+                      <button onClick={()=>changeTab(3)} className={HandleTab == 3? styles.tabNavigator__btn+" tR_medium" : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__btnOFF}>Hobbys</button>
                       <button onClick={()=>changeTab(4)} className={HandleTab == 4? styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__right : styles.tabNavigator__btn+" tR_medium "+styles.tabNavigator__right+" "+styles.tabNavigator__btnOFF}></button>
                   </nav>
                   <div className={styles.tabContainer}>
                       <div className={HandleTab == 1? styles.SectionTab+" "+styles.divLearning : styles.SectionTabOFF}>
-                          <Learning Title="Graphql" Text="Para optimizar la comunicacion entre el cliente y el servidor y para que los datos que se manipulen sean mas precisos. Aprender sobre esta tecnología es una de mis prioridades."><img src='/icons/graphql.png'/></Learning>
-                          <Learning Title="Patrones de diseño" Text="Considero que conocer patrones de diseño es bastante util para expandir la mente creativa de un programador. Me resultan muy interesantes y utiles en ciertas ocaciones."><img src='/icons/patrones_diseño.png'/></Learning>
-                          <Learning Title=".NET" Text=".Net me resulta un entorno de desarrollo moy interesante, en el que se pueden hacer aplicaciones de muchos tipos. Estoy comenzando a aprender sus distintas plantillas y a la vez reorzando mi programacion orientada a objetos."><CSharpIcon/></Learning>
+                          <Learning Title="Graphql" Text="Graphql me parece una tecnología muy util, actualmente me encuentro realizando practicas que incluyen graphql para poder dominarlo mejor."><img src='/icons/graphql.png'/></Learning>
+                          <Learning Title="Patrones de diseño" Text="Considero que conocer patrones de diseño es bastante util para expandir la mente creativa de un programador. Me resultan muy interesantes y útiles en ciertas ocasiones."><img src='/icons/patrones_diseño.png'/></Learning>
+                          <Learning Title=".NET" Text="El entorno de .Net es muy interesante, con este se pueden hacer aplicaciones de todo tipo. Y actualmente es bastante demandado, así que he decidido adentrarme en este nuevo entorno."><CSharpIcon/></Learning>
                       </div>
                       <div className={HandleTab == 2? styles.SectionTab+" "+styles.divDevProjects : styles.SectionTabOFF}>
-                          <ProjectCard linkView ="No disponible" linkGithub="https://www.google.com/" Title="Sitio de encuestas" Image="/abstracview.jpg" Description="Sitio web tipo red social en el que los usuarios registrados pueden crear encuestas o participar en las encuestas de otros usuarios." ConocimientosEmpleados="No disponible" Tecnologias={["null", "null", "null", "null"]}/>
-                          <ProjectCard linkView ="No disponible" linkGithub="https://github.com/JosueG24/TheCats-Frontend" Title="The Cats" Image="/abstracview.jpg" Description="Sitio web que simula ser un horfanato de gatos, puedes hacerla funcionar con una api Rest o una graphql para realzar consultas y editar los datos." ConocimientosEmpleados="unknown" Tecnologias={["React", "Typescript", "Tailwind", "ApiRest", "Graphql", "MongoDB"]}/>
+                          <ProjectCard linkView ="No disponible" linkGithub="No disponible" Title="Sitio de encuestas" Image="/questionDuck.jpeg" Description="Sitio web tipo red social en el que los usuarios registrados pueden crear encuestas o participar en las encuestas de otros usuarios." ConocimientosEmpleados="No disponible" Tecnologias={["null", "null", "null", "null"]}/>
+                          <ProjectCard linkView ="No disponible" linkGithub="https://github.com/JosueG24/TheCats-Frontend" Title="The Cats" Image="/orphanCats.jpeg" Description="Sitio web que simula ser un orfanato de gatos en el que puedes darle nombre y adoptar al gato que mas te guste. Puedes hacerla funcionar con una api Rest o una graphql para realizar consultas y editar los datos." ConocimientosEmpleados="unknown" Tecnologias={["React", "Typescript", "Tailwind", "ApiRest", "Graphql", "MongoDB"]}/>
                       </div>
                       <div className={HandleTab == 3? styles.SectionTab+" "+styles.divHobbies: styles.SectionTabOFF}>
-                          <Hobbies Image="/abstracview.jpg" Title= "Dibujar" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Hobbies Image="/abstracview.jpg" Title= "Musica" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
-                          <Hobbies Image="/abstracview.jpg" Title= "Ejercitarme" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
+                          <Hobbies Image="/drawingPanda.jpeg" Title= "Dibujo" Text="Expresar mis ideas a traves del dibujo es uno de mis pasatiempos preferidos."/>
+                          <Hobbies Image="/guitarPanda.jpeg" Title= "Música" Text="Me gusta tanto escuchar como interpretar música por que despierta la imaginación."/>
+                          <Hobbies Image="/exercisingPanda.jpeg" Title= "Ejercicio" Text="Salir a caminar es algo que ayuda a la salud, además de que permite despejar la mente. "/>
                       </div>
                       <div className={HandleTab == 4? styles.SectionTab+" "+styles.divSkills : styles.SectionTabOFF}>
                           {/* <Skills Image="/abstracview.jpg" Title= "Buena capacidad Lógica" Text="Texto de ejemplo texto de ejemplo texto de ejemplo texto de ejemplo"/>
