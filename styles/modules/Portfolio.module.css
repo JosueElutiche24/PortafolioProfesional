@@ -115,11 +115,11 @@
 
 .modal_content_1{
     width: 100%;
-    height: 75%;
+    height: 65%;
     display: flex;
 }
 .modal_DivImages{
-    width: 50%;
+    width: 65%;
     height: 100%;
     border: 2px solid #DFF6FF;
 }
@@ -133,46 +133,27 @@
         .Swiper{
             width: 100%;
             height: 100%;
-            background-color: #0c5c8d;
+        }
+        .Slider{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .Slider img{
-            width: 85%;
-            margin: auto auto;
+            width: 95%;
+            /* margin: auto auto; */
 
         }
-.modal_DivConocimienos{
-    width: 50%;
+
+.modal_subContent{
+    width: 35%;
     height: 100%;
-    border: 2px solid #DFF6FF;
-}
-        .ConoTitle{
-            text-align: center;
-            margin: 1vh 1vw;
-        }
-        .ConoParragraph{
-            padding: 0 1vw; 
-        }
-        .btnClosedProject{
-            margin: 0 auto;
-            background-color: #DFF6FF;
-            color: #06283D;
-            transition: 0.3s;
-            padding: 0.5rem;
-            border-radius: 5px;
-        }.btnClosedProject:hover{
-            background-color: #06283D;
-            outline: #DFF6FF 1px solid;
-            color: #DFF6FF;
-        }
-
-.modal_content_2{
-    width: 100%;
-    height: 25%;
     display: flex;
+    flex-direction: column;
 }
 .modal_DivTecnos{
-    width: 45%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     border: 2px solid #DFF6FF;
 }
         .tecnosTitle{
@@ -197,8 +178,8 @@
         }
 
 .modal_DivLinks{
-    width: 55%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     border: 2px solid #DFF6FF;
 }
         .linksTitle{
@@ -220,7 +201,35 @@
             color: white;
         }
 
-
+.modal_content_2{
+    width: 100%;
+    height: 35%;
+    display: flex;
+}
+.modal_DivConocimienos{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #DFF6FF;
+}
+        .ConoTitle{
+            text-align: center;
+            margin: 1vh 1vw;
+        }
+        .ConoParragraph{
+            padding: 0 1vw; 
+        }
+        .btnClosedProject{
+            margin: 0 auto;
+            background-color: #DFF6FF;
+            color: #06283D;
+            transition: 0.3s;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }.btnClosedProject:hover{
+            background-color: #06283D;
+            outline: #DFF6FF 1px solid;
+            color: #DFF6FF;
+        }
 @media only screen and (max-width: 425px){    
     .sectionPortfolio{
         padding: 0rem;
@@ -275,18 +284,48 @@
 }
 .modal_content{
     width: 95%;
-    min-height: 90%;
+    height: 90%;
     top: 5vh;
     left: 2.5vw;
 }
 
 .modal_content_1{
-    min-height: 50vh;
+    height: 50%;
     flex-direction: column;
 }
 .modal_DivImages{
     width: 100%;
-    height: 45vh;
+    height: 50%;
+}
+.modal_subContent{
+    width: 100%;
+    height: 50%;
+    flex-direction: row;
+    background-color: rgb(1, 28, 19);
+}
+.modal_DivTecnos{
+    width: 40%;
+    height: 100%;
+}
+    .tecnosTitle{
+        margin: 0.5vh 0.5vw;
+        font-size:  calc(1em + 1vw);
+    }
+    .tecnosElements{
+        margin: 0.5vh auto;
+    }
+.modal_DivLinks{
+    width: 60%;
+    height: 100%;
+}
+    .linksTitle{
+        margin: 0.5vh 0.5vw;
+        font-size:  calc(1em + 1vw);
+    }
+/* --------------- */
+.modal_content_2{
+    height: 50%;
+    flex-direction: column;
 }
 .modal_DivConocimienos{
     width: 100%;
@@ -302,27 +341,5 @@
         margin: 0.8rem auto;
     }
 
-.modal_content_2{
-    flex-direction: column;
-}
-.modal_DivTecnos{
-    width: 100%;
-    height: 20vh;
-}
-    .tecnosTitle{
-        margin: 0.5vh 0.5vw;
-        font-size:  calc(1em + 1vw);
-    }
-    .tecnosElements{
-        margin: 0.5vh auto;
-    }
-.modal_DivLinks{
-    width: 100%;
-    height: 20vh;
-}
-    .linksTitle{
-        margin: 0.5vh 0.5vw;
-        font-size:  calc(1em + 1vw);
-    }
 }
 
